@@ -1,313 +1,536 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 25px 70px;
+  font-family: "Poppins";
+  font-weight: 300;
+  overflow-x: hidden;
 }
+
+/* -----------------------
+--------NAVBAR---------
+----------------------- */
 
 nav {
-    align-items: center;
-    display: flex;
-    height: 10vh;
+  width: 100%;
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
 }
 
-.logo {
-    width: 30vw;
+.menu {
+  display: none;
 }
 
-.nav-items {
-    display: flex;
-    width: 70vw;
-    justify-content: space-evenly;
-    list-style: none;
+.lists ul a {
+  text-decoration: none;
+  color: black;
+  margin-right: 13px;
+  font-size: 1.2rem;
 }
 
-.nav-items li {
-    font-size: 20px;
+.register-now-button {
+  margin: 0 2rem;
+  border: 1px solid blue;
+  padding: 9px 13px;
+  border-radius: 10px;
+  color: blue !important;
 }
 
-.nav-items li a {
-    text-decoration: none;
-    color: rgba(4,98,234,1);
-    border: 2px solid rgba(4,98,234,1);
-
-    padding: 15px 40px;
-    border-radius: 10px;
+.active {
+  font-weight: 500;
 }
 
-.post {
-    display: flex;
-    justify-content: space-between;
-    margin: 150px 0;
+.logo img {
+  width: 150px;
+}
+
+/* -----------------------
+--------HERO SECTION-------
+----------------------- */
+
+.hero-section {
+  height: 80vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
 }
 
 .left {
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.post:nth-child(3) .left {
-    margin: 100px 0;
+.hero-section .left h1 {
+  font-size: 3rem;
+  padding-right: 250px;
 }
 
-.left h1 {
-    font-size: 55px;
+.buttons {
+  margin-top: 10px;
 }
 
-.left p {
-    color: #4b4848;
-    font-weight: 300;
+.buttons a {
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  padding: 13px 23px;
+  border-radius: 10px;
 }
 
-.left a {
-    text-decoration: none;
-    background: rgb(4,98,234);
-    background: linear-gradient(5deg, rgba(4,98,234,1) 20%, rgba(9,193,248,1) 80%); 
-    width: fit-content;
-    padding: 15px 40px;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: 700;
+/* -----------------------
+--------SERVICE SECTION---------
+----------------------- */
+
+.service-section {
+  height: 80vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
 }
 
-.right {
-    width: 40vw;
+.service-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.service-top {
-    display: flex;
-    justify-content: space-between;
+.service-section .service-left h1 {
+  font-size: 3rem;
+  padding-right: 250px;
 }
 
-.service-top h1 {
-    width: 40vw;
-    font-size: 45px;
+/* -----------------------
+------SUPPORT SECTION------
+----------------------- */
+
+.support-image {
+  width: 500px;
 }
 
-.service-top p {
-    width: 40vw;
-    font-size: 20px;
-    margin-bottom: 100px;
+.support-section {
+  height: 80vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
 }
 
-.service-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 80px;
+.support-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.service-card {
-    flex-shrink: 0;
-    width: 25%;
+.support-left h1 {
+  font-size: 3rem;
+  padding-right: 250px;
 }
 
-.service-card img {
-    width: 64px;
+.support-left p {
+  padding-right: 250px;
 }
+
+/* -----------------------
+----- PROVIDED SERVICES -----
+----------------------- */
+
+.provided-services {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+}
+
+.provided-services .service-heading {
+  width: 50%;
+  padding-right: 300px;
+  font-size: 1.4rem;
+}
+
+.provided-services .service-para {
+  width: 50%;
+}
+
+/* -----------------------
+-------- TEMPLATES ---------
+----------------------- */
+
+.templetes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+/* -----------------------
+-------- PRICING ---------
+----------------------- */
 
 .pricing {
-    background: rgb(4,98,234);
-    background: linear-gradient(5deg, rgba(4,98,234,1) 20%, rgba(9,193,248,1) 80%);
-    margin: 150px -70px !important;
-    height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  background-color: #0797f2;
+  padding-top: 50px;
 }
 
-.price-heading {
-    display: flex;
-    height: 20vh;
-    align-items: center;
-    justify-content: center;
+.cards {
+  margin-top: 2rem;
+  display: flex;
+  gap: 5rem;
 }
 
-.price-heading h1 {
-    color: #fff;
-    font-size: 50px;
+.card {
+  background-color: white;
+  border-radius: 7px;
+  width: 300px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
 }
 
-.price-cards {
-    display: flex;
-    justify-content: space-evenly;
-    height: 90vh;
+.card div p {
+  font-size: 15px;
 }
 
-.price-card {
-    width: 21%;
-
-    padding: 0px 40px;
-    border-radius: 10px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #fff;
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.price-card:nth-child(2) .card-heading {
-    background-color: #353535;
-    margin: 0 -40px;
-    padding: 40px;
-    border-radius: 10px;
+.price {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.price-card:nth-child(2) .card-heading h1,
-.price-card:nth-child(2) .card-heading p {
-    color: #fff;
+.price h1 {
+  font-size: 30px;
 }
 
-.card-list p {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 30px 0;
+.price a {
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: blue;
+  text-decoration: none;
+  padding: 7px 10px;
 }
 
-.card-list p i {
-    color: #54E3BD;
+.title {
+  height: 100px;
 }
 
-.price-rate {
-    text-align: center;
-    height: 200px;
+.active-card {
+  padding: 0;
 }
 
-.price-rate h1 {
-    color: #1D2B4F;
+.active-card .features-list,
+.active-card .price {
+  padding: 1rem;
 }
 
-.price-rate h1 span,
-.price-rate p {
-    color: #798196;
+.active-card .title {
+  color: white;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 7px;
 }
 
-.price-rate p {
-    margin-bottom: 40px;
+.active-card .price div a {
+  background-color: blue;
+  color: white;
 }
 
-.price-rate a {
-    text-decoration: none;
-    border: 2px solid rgb(4,98,234);
-    padding: 10px 40px;
-    border-radius: 10px;
-
-    color: rgba(4,98,234,1);
-    font-weight: 600;
+.card .price div a {
+  font-weight: 400;
 }
 
-.review-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly
+.features-list {
+  height: 200px;
 }
 
-.review-card {
-    width: 40%;
-    flex-shrink: 0;
+/* -----------------------
+-------- CUSTOMERS ---------
+----------------------- */
 
-    margin: 50px 0;
-    padding: 30px 30px;
-    border: 1px solid #eceaea
+.customer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  align-items: center;
+  gap: 2rem;
 }
 
-.circle {
-    background-color: #D9D9D9;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+.customer-heading {
+  text-align: center;
 }
 
-.review-content {
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+.customer-heading p {
+  width: 800px;
 }
 
-.review-card h1 {
-    font-size: 20px;
-    color: #1D2B4F;
+.grid div {
+  width: 500px;
+  padding-top: 20px;
 }
 
-.register {
-    background-image: url("./images/footer-bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 -70px;
-    height: 250px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4rem;
 }
 
-.register-left {
-    width: 30%;
-    color: #fff;
+.customer-profile {
+  display: flex;
+  padding: 10px;
 }
 
-.register-right a {
-    color: #fff;
-    text-decoration: none;
-    border: 1px solid #fff;
-    padding: 15px 40px;
-    border-radius: 10px;
+.users p {
+  padding-left: 20px;
 }
+
+.names {
+  margin-left: -360px;
+}
+
+.users {
+  background-color: #fff;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* -----------------------
+-------- OCE SERVICE ---------
+----------------------- */
+
+.oce-hosting {
+  background-color: red;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.oce-heading h1 {
+  font-size: 2rem;
+}
+
+.oce-heading {
+  width: 600px;
+  color: white;
+}
+
+.oce-register a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+.oce-hosting {
+  background-image: url(./images/footer-bg.svg);
+  background-size: cover;
+}
+
+/* -----------------------
+-------- FOOTER ---------
+----------------------- */
 
 footer {
-    display: flex;
-    margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
 }
 
-.about {
-    width: 25%;
+.logo p {
+  width: 200px;
 }
 
-.about img {
-    margin-bottom: 20px;
-}
+/* -----------------------
+--------MOBILE DEVICE---------
+----------------------- */
 
-.links {
-    display: flex;
-    justify-content: space-evenly;
-    width: 55%;
-}
+@media screen and (max-width: 1020px) {
+  .lists {
+    display: none;
+  }
 
-.links ul {
-    list-style: none;
-}
+  /* ----- hero section ---- */
 
-.links ul li:first-child {
-    font-size: 30px;
-    font-weight: 600;
-    color: #1D2B4F;
-}
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 5rem;
+    height: 100vh;
+  }
 
-.links ul li {
-    font-weight: 300;
-    margin: 10px 0;
-}
+  .hero-section .left h1 {
+    font-size: 2rem;
+    padding-right: 0;
+  }
 
-.socials {
-    width: 20%;
+  /* ----- service section ---- */
+
+  .service-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 5rem;
+    height: 100vh;
+    margin-top: 12rem;
+  }
+
+  .service-section .service-left h1 {
+    font-size: 2rem;
+    padding-right: 0;
+  }
+
+  /* ----- support section ---- */
+
+  .support-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 5rem;
+    height: 100vh;
+  }
+
+  .support-section .support-left h1 {
+    font-size: 2rem;
+    padding-right: 0;
+  }
+
+  .support-left p {
+    padding-right: 0px;
+  }
+
+  .support-section .support-left h1 {
+    padding-right: 0;
+  }
+
+  .menu {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .service-image,
+  .hero-image {
+    width: 500px;
+  }
+
+/* -----------------------
+--------PROVIDED SERVICES---------
+----------------------- */
+
+  .provided-services {
+    margin-top: 20rem !important;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .provided-services .service-heading {
+    width: 100%;
+    padding-right: 0px;
+    font-size: 1.4rem;
+  }
+
+  .provided-services .service-para {
+    width: 100%;
+  }
+
+  /* -------templates------- */
+
+  .templetes {
+    grid-template-columns: 1fr;
+    place-items: center;
+    place-content: center;
+    text-align: center;
+  }
+
+  .cards {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+  }
+
+/* -----------------------
+-------- CUSTOMERS ---------
+----------------------- */
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .grid div {
+    width: 400px;
+  }
+
+  .names {
+    margin-left: 0;
+    justify-content: space-between;
+  }
+
+  .customer-heading p {
+    padding: 0 10rem;
+  }
+
+ /* -----------------------
+-------- OCE SERVICE ---------
+----------------------- */
+
+  .oce-hosting {
+    flex-direction: column;
+    gap: 2rem;
+    background: none;
+  }
+
+  .oce-heading h1 {
+    font-size: 2rem;
+  }
+
+  .oce-heading {
+    width: 400px;
+  }
+
+  /* -----FOOOTER----- */
+
+  footer {
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
 }
-
-.socials ul li img {
-    height: 48px;
-}
-
-.socials ul {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-}
-
